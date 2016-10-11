@@ -1,0 +1,6 @@
+.idea
+/target
+remindme.server.iml
+.idea/workspace.xml
+src/main/java/com/alex_ttt/remindme/server/repository/
+src/test/
