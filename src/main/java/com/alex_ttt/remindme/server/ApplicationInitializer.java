@@ -10,12 +10,9 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-/**
- * Created by user on 11.10.2016.
- */
-public class ApplicationInitializer implements WebApplicationInitializer{
+public class ApplicationInitializer implements WebApplicationInitializer {
 
-    private final static String  DISPATCHER = "dispatcher";
+    private final static String DISPATCHER = "dispatcher";
 
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
@@ -27,3 +24,4 @@ public class ApplicationInitializer implements WebApplicationInitializer{
         servlet.setLoadOnStartup(1);
     }
 }
+

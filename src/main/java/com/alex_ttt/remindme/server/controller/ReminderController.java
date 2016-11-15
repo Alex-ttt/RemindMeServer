@@ -6,18 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Created by user on 11.10.2016.
- */
-
 @Controller
 @RequestMapping("/reminder")
 public class ReminderController {
 
     @RequestMapping(value = "/get", method = RequestMethod.GET)
     @ResponseBody
-    public String getReminder(ModelMap model){
+    public String getReminder(ModelMap model) {
         return "My reminder";
     }
 
 }
+
